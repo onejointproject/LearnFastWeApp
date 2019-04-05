@@ -16,6 +16,7 @@
         </ul>
       </section>
       <div class="bottomfot"></div>
+     
   </div>
 </template>
 
@@ -51,7 +52,7 @@ export default {
     methods:{
        jump(index){
            let _iid = this.parentListData[index]._iid
-           this.$router.push(`news/chat/${_iid}`)
+           this.$router.push(`news/chat`)
        }
     },
 }

@@ -10,7 +10,13 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable:{
+      '/bannerApi':{     
+        target:'http://gateway.lvzheng.com',
+        changeOrigin:true, 
+        pathRewrite:{'^/bannerApi':''} 
+      },
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

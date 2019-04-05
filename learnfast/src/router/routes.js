@@ -22,7 +22,8 @@ const routes = [
     },
     children:[
         {
-            path:'/chat/:iid',
+            path:'/chat',
+            name: 'chat',
             component:Chat
         }
     ] 
