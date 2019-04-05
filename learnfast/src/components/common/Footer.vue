@@ -23,7 +23,7 @@ export default {
   background:#fafbfc;
   justify-content: space-between;
   li{
-    .h(120);
+    .h(100);
     flex:1;
     display:flex;
     justify-content: center;
