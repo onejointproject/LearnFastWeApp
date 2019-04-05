@@ -19,6 +19,7 @@ export default {
   .left(0);.bottom(0);
   width:100%;
   .h(100);
+  z-index:999;
   display:flex;
   background:#fafbfc;
   justify-content: space-between;

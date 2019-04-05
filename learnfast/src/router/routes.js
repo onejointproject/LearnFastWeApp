@@ -2,6 +2,8 @@ import Footer from '@/components/common/Footer';
 import Home from '@/components/pages/home'
 import News from '@/components/pages/news'
 import Myself from '@/components/pages/myself'
+
+import Chat from '@/components/pages/news/chat'
 const routes = [
   {
     path: '/home',
@@ -17,7 +19,13 @@ const routes = [
     components: {
       default: News,
       footer: Footer
-    }
+    },
+    children:[
+        {
+            path:'/chat/:iid',
+            component:Chat
+        }
+    ] 
   },
   {
     path: '/myself',
