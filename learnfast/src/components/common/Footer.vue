@@ -1,8 +1,8 @@
 <template>
   <ul class="_nav">
-    <router-link tag="li" to="/home"><p><i class="iconfont">&#xe87e;</i>首页</p></router-link>
-    <router-link tag="li" to="/news"><p><i class="iconfont">&#xe69b;</i>消息</p></router-link>
-    <router-link tag="li" to="/myself"><p><i class="iconfont">&#xe6b8;</i>我的</p></router-link>
+    <router-link tag="li" to="/home" active-class="active"><p><i class="iconfont">&#xe87e;</i>首页</p></router-link>
+    <router-link tag="li" to="/news" active-class="active"><p><i class="iconfont">&#xe69b;</i>消息</p></router-link>
+    <router-link tag="li" to="/myself" active-class="active"><p><i class="iconfont">&#xe6b8;</i>我的</p></router-link>
   </ul>
 </template>
 
@@ -35,6 +35,9 @@ export default {
          display:block;
       }
     }
+  }
+  .active{
+    color:#137de7;
   }
 }
 </style>
